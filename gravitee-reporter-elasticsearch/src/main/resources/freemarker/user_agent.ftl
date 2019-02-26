@@ -1,7 +1,8 @@
 <@compress single_line=true>
 {
   "user_agent" : {
-    "field" : "agent"
+    "if": "ctx['user-agent'] != null",
+    "field" : "user-agent"
   }
 }
 </@compress>
